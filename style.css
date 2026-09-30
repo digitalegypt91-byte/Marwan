@@ -1,0 +1,2430 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #172033;
+    line-height: 1.8;
+}
+
+
+/* شريط التنقل */
+.navbar {
+width: 100%;
+min-height: 70px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 15px 6%;
+
+background-color: white;
+border-bottom: 1px solid #e5e7eb;
+
+/* تثبيت شريط التنقل أثناء التمرير */
+position: sticky;
+top: 0;
+z-index: 1000;
+
+}
+
+
+/* اسم الموقع */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* روابط القائمة */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+
+.nav-links a {
+    color: #172033;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* تأثير عند مرور الماوس */
+.nav-links a:hover {
+    color: #1677ff;
+}
+
+
+/* المحتوى الرئيسي */
+main {
+    padding: 100px 6%;
+    text-align: center;
+}
+
+
+main h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
+main p {
+    font-size: 18px;
+    color: #5f6b7a;
+}
+/* Hero Section */
+
+.hero {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+
+    padding: 80px 8%;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.hero-label {
+    display: inline-block;
+
+    padding: 7px 16px;
+
+    margin-bottom: 20px;
+
+    border-radius: 30px;
+
+    background-color: #e8f1ff;
+    color: #1677ff;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 76px);
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+
+.hero p {
+    max-width: 600px;
+
+    font-size: 19px;
+
+    color: #5f6b7a;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 24px;
+
+    background-color: #1677ff;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+
+.hero-button:hover {
+    transform: translateY(-3px);
+}
+
+
+.hero-visual {
+    width: 380px;
+    height: 380px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.digital-card {
+    width: 300px;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+
+    transform: rotate(-3deg);
+
+    transition: 0.3s;
+}
+
+
+.digital-card:hover {
+    transform: rotate(0deg) translateY(-8px);
+}
+
+
+.card-icon {
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+
+
+.digital-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+.digital-card p {
+    color: #6b7280;
+}
+/* قسم الإنجازات */
+
+.achievements {
+    padding: 100px 8%;
+    background-color: #ffffff;
+}
+
+
+/* عنوان القسم */
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 6px 14px;
+
+    border-radius: 30px;
+
+    background-color: #e8f1ff;
+
+    color: #1677ff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.section-heading h2 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading p {
+    color: #667085;
+
+    font-size: 17px;
+}
+
+
+/* شبكة البطاقات */
+
+.cards-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* البطاقة */
+
+.achievement-card {
+    position: relative;
+
+    padding: 30px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* رقم البطاقة */
+
+.card-number {
+    font-size: 14px;
+
+    color: #1677ff;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+.achievement-card h3 {
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+
+.achievement-card p {
+    color: #667085;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+}
+
+
+/* رابط المصدر */
+
+.source-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #1677ff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.source-link span {
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+
+.source-link:hover span {
+    transform: translate(3px, -3px);
+}
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-visual {
+        height: 300px;
+    }
+
+    .digital-card {
+        width: 270px;
+    }
+
+    .achievements {
+        padding: 70px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+} /* ============================= */
+/* مشروعات الدولة الرقمية */
+/* ============================= */
+
+.projects-section {
+    padding: 110px 8%;
+    background-color: #f5f7fa;
+}
+
+
+.projects-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.project-card {
+    position: relative;
+
+    padding: 35px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.project-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 5px;
+    height: 100%;
+
+    background-color: #1677ff;
+}
+
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.09);
+}
+
+
+.project-number {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #1677ff;
+
+    margin-bottom: 18px;
+}
+
+
+.project-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 16px;
+
+    background-color: #e8f1ff;
+
+    color: #1677ff;
+
+    font-size: 27px;
+
+    font-weight: bold;
+}
+
+
+.project-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+
+.project-card p {
+    color: #667085;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+}
+
+
+.project-c
+
+
+/* ============================= */
+/* الخط الزمني */
+/* ============================= */
+
+.timeline-section {
+    padding: 110px 8%;
+    background-color: #ffffff;
+}
+
+.timeline {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 70px auto 0;
+
+    padding: 10px 0;
+}
+
+
+/* الخط الرئيسي */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    right: 50%;
+
+    width: 2px;
+
+    background-color: #dbe4f0;
+
+    transform: translateX(50%);
+}
+
+
+/* كل مرحلة */
+
+.timeline-item {
+    position: relative;
+
+    width: 50%;
+
+    padding: 20px 45px;
+}
+
+
+/* المراحل الفردية */
+
+.timeline-item:nth-child(odd) {
+    right: 50%;
+
+    text-align: right;
+}
+
+
+/* المراحل الزوجية */
+
+.timeline-item:nth-child(even) {
+    right: 0;
+
+    text-align: left;
+}
+
+
+/* الدائرة */
+
+.timeline-dot {
+    position: absolute;
+
+    top: 30px;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #1677ff;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    border: 5px solid #ffffff;
+
+    box-shadow: 0 0 0 2px #dbe4f0;
+
+    z-index: 2;
+}
+
+
+/* مكان الدائرة في اليمين */
+
+.timeline-item:nth-child(odd) .timeline-dot {
+    left: -24px;
+}
+
+
+/* مكان الدائرة في الشمال */
+
+.timeline-item:nth-child(even) .timeline-dot {
+    right: -24px;
+}
+
+
+/* محتوى المرحلة */
+
+.timeline-content {
+    padding: 28px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* العنوان الصغير */
+
+.timeline-label {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #1677ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.timeline-content h3 {
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.timeline-content p {
+    color: #667085;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+}
+
+
+/* الموبايل */
+
+@media (max-width: 700px) {
+
+    .timeline {
+        margin-top: 50px;
+
+        padding-right: 35px;
+    }
+
+
+    .timeline::before {
+        right: 15px;
+
+        transform: none;
+    }
+
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        width: 100%;
+
+        right: auto;
+
+        padding: 15px 0 15px 0;
+
+        text-align: right;
+    }
+
+
+    .timeline-item .timeline-dot,
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        right: -44px;
+
+        left: auto;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 11px;
+    }
+
+
+    .timeline-content {
+        padding: 23px;
+    }
+
+
+    .timeline-content h3 {
+        font-size: 20px;
+    }
+
+}  /* ============================= */
+/* قسم المصادر */
+/* ============================= */
+
+.sources-section {
+    padding: 110px 8%;
+    background-color: #f5f7fa;
+}
+
+
+.sources-grid {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.source-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 22px;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 22px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.source-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* رقم المصدر */
+
+.source-icon {
+    min-width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background-color: #e8f1ff;
+
+    color: #1677ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* معلومات المصدر */
+
+.source-info {
+    flex: 1;
+}
+
+
+.source-info h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+.source-info p {
+    color: #667085;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+}
+
+
+/* زر المصدر */
+
+.source-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 15px;
+
+    border-radius: 10px;
+
+    background-color: #1677ff;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.source-button:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+}
+
+
+/* الموبايل */
+
+@media (max-width: 700px) {
+
+    .sources-section {
+        padding: 75px 5%;
+    }
+
+
+    .sources-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .source-card {
+        padding: 24px;
+
+        gap: 15px;
+    }
+
+
+    .source-info h3 {
+        font-size: 18px;
+    }
+
+}
+/* ============================= */
+/* عن المشروع */
+/* ============================= */
+
+.about-section {
+    padding: 110px 8% 30px;
+
+    background-color: #111827;
+
+    color: white;
+}
+
+.about-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+/* محتوى المشروع */
+
+.about-content {
+    max-width: 650px;
+}
+
+
+.about-content .section-label {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    color: #8bbcff;
+}
+
+
+.about-content h2 {
+    font-size: 44px;
+
+    margin-bottom: 25px;
+}
+
+
+.about-content p {
+    color: #cbd5e1;
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin-bottom: 18px;
+}
+
+
+/* بطاقة المطور */
+
+.developer-card {
+    padding: 35px;
+
+    background-color: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+
+.developer-card:hover {
+    transform: translateY(-6px);
+
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+
+.developer-number {
+    margin-bottom: 25px;
+
+    color: #8bbcff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.developer-card > span {
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+.developer-card h3 {
+    font-size: 27px;
+
+    margin: 8px 0 12px;
+}
+
+
+.developer-card > p {
+    color: #cbd5e1;
+
+    line-height: 1.9;
+
+    margin-bottom: 25px;
+}
+
+
+/* بيانات المطور */
+
+.developer-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+
+.developer-details div {
+    padding: 15px;
+
+    border-radius: 14px;
+
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.developer-details strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 13px;
+
+    color: #94a3b8;
+}
+
+
+.developer-details span {
+    font-size: 14px;
+
+    color: #e2e8f0;
+}
+
+
+/* حقوق الملكية */
+
+.copyright {
+    max-width: 1100px;
+
+    margin: 80px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+/* الموبايل */
+
+@media (max-width: 800px) {
+
+    .about-section {
+        padding: 80px 5% 25px;
+    }
+
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+
+    .developer-card h3 {
+        font-size: 23px;
+    }
+
+
+    .developer-details {
+        grid-template-columns: 1fr;
+    }
+
+
+    .copyright {
+        margin-top: 55px;
+    }
+
+}
+/* ============================= */
+/* أهداف المشروع */
+/* ============================= */
+
+.goals-section {
+    padding: 110px 8%;
+    background-color: #ffffff;
+}
+
+
+.goals-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.goal-card {
+    padding: 30px;
+
+    background-color: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.goal-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.goal-number {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #1677ff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.goal-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+.goal-card p {
+    color: #667085;
+
+    line-height: 1.9;
+}
+
+
+/* ============================= */
+/* دليل الاستخدام */
+/* ============================= */
+
+.guide-section {
+    padding: 110px 8%;
+
+    background-color: #f5f7fa;
+}
+
+
+.guide-grid {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.guide-step {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding: 28px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.guide-step:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+.guide-icon {
+    min-width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background-color: #e8f1ff;
+
+    color: #1677ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.guide-step h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+.guide-step p {
+    color: #667085;
+
+    line-height: 1.8;
+}
+
+
+/* ============================= */
+/* الشاشات الصغيرة */
+/* ============================= */
+
+@media (max-width: 1000px) {
+
+    .goals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .goals-section,
+    .guide-section {
+        padding: 75px 5%;
+    }
+
+
+    .goals-grid,
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .goal-card,
+    .guide-step {
+        padding: 25px;
+    }
+
+} /* ============================= */
+/* الرابط النشط في القائمة */
+/* ============================= */
+
+.nav-links a {
+    position: relative;
+
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a.active {
+    color: #1677ff;
+
+    font-weight: bold;
+}
+
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    bottom: -7px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #1677ff;
+
+    border-radius: 5px;
+}
+/* ============================= */
+/* زر العودة لأعلى الصفحة */
+/* ============================= */
+
+.back-to-top {
+    position: fixed;
+
+    bottom: 25px;
+    left: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #1677ff;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
+
+    z-index: 1000;
+}
+
+
+.back-to-top.show {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+}
+
+/* حركة ظهور العناصر */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* منع شريط التنقل من تغطية عناوين الأقسام */
+main section {
+    scroll-margin-top: 90px;
+}
+/* =====================================================
+   تحسينات الواجهة النهائية
+   ===================================================== */
+
+/* تحسين شكل الصفحة */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   Navbar
+   ===================================================== */
+
+.navbar {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    background-color: rgba(255, 255, 255, 0.94);
+
+    box-shadow: 0 5px 25px rgba(15, 23, 42, 0.05);
+
+    transition:
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+}
+
+.nav-links a {
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.nav-links a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   Hero
+   ===================================================== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(22, 119, 255, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(22, 119, 255, 0.08),
+            transparent 30%
+        );
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(22, 119, 255, 0.05);
+
+    top: -150px;
+    right: -100px;
+
+    pointer-events: none;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background: rgba(22, 119, 255, 0.04);
+
+    bottom: -100px;
+    left: -80px;
+
+    pointer-events: none;
+}
+
+.hero-content,
+.hero-visual {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    letter-spacing: -1.5px;
+}
+
+.hero-label {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    background-color: #e8f1ff;
+    color: #1677ff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.hero-button {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.hero-button:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(22, 119, 255, 0.25);
+}
+
+
+/* =====================================================
+   Digital Card
+   ===================================================== */
+
+.digital-card {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.digital-card:hover {
+    transform: translateY(-10px) rotate(-1deg);
+
+    box-shadow:
+        0 25px 60px rgba(22, 119, 255, 0.15);
+}
+
+
+/* =====================================================
+   جميع الكروت
+   ===================================================== */
+
+.achievement-card,
+.project-card,
+.source-card,
+.goal-card,
+.guide-step {
+    will-change: transform;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.achievement-card:hover,
+.project-card:hover,
+.source-card:hover,
+.goal-card:hover,
+.guide-step:hover {
+    border-color: rgba(22, 119, 255, 0.25);
+}
+
+
+/* =====================================================
+   عناوين الأقسام
+   ===================================================== */
+
+.section-heading {
+    position: relative;
+}
+
+.section-heading h2 {
+    letter-spacing: -0.8px;
+}
+
+.section-label {
+    transition:
+        transform 0.3s ease;
+}
+
+.section-label:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   Source Links
+   ===================================================== */
+
+.source-link {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+.source-link:hover {
+    transform: translateX(-4px);
+}
+
+.source-link span {
+    transition: transform 0.25s ease;
+}
+
+.source-link:hover span {
+    transform: translate(-3px, -3px);
+}
+
+
+/* =====================================================
+   Timeline
+   ===================================================== */
+
+.timeline-content {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+    border-color: rgba(22, 119, 255, 0.25);
+}
+
+
+/* =====================================================
+   About
+   ===================================================== */
+
+.developer-card {
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.developer-details div {
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.developer-details div:hover {
+    transform: translateY(-3px);
+
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+/* =====================================================
+   Back To Top
+   ===================================================== */
+
+.back-to-top {
+    box-shadow:
+        0 10px 25px rgba(22, 119, 255, 0.25);
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.back-to-top:hover {
+    box-shadow:
+        0 15px 35px rgba(22, 119, 255, 0.35);
+}
+
+
+/* =====================================================
+   تحديد القسم الحالي
+   ===================================================== */
+
+.nav-links a.active {
+    text-shadow:
+        0 0 15px rgba(22, 119, 255, 0.15);
+}
+
+
+/* =====================================================
+   تحسين الموبايل
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        position: sticky;
+        top: 0;
+
+        padding: 12px 5%;
+    }
+
+    .nav-links {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        letter-spacing: -0.8px;
+    }
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+
+        bottom: 18px;
+        left: 18px;
+    }
+}
+
+
+/* =====================================================
+   تقليل الحركة للمستخدمين الذين يفضلون ذلك
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+    }
+}
+/* توسيط محتوى العنوان الرئيسي */
+.hero-content {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content .hero-label {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-intro {
+    height: 0;
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.page-intro-content {
+    display: none;
+}
+
+/* زر الوضع الليلي */
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+
+    background-color: #f8fafc;
+    color: #111827;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(15deg) scale(1.05);
+}
+/* =====================================================
+   Dark Mode
+   ===================================================== */
+
+body.dark-mode {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+/* شريط التنقل */
+body.dark-mode .navbar {
+    background-color: rgba(15, 23, 42, 0.95);
+    border-bottom-color: #1e293b;
+}
+
+body.dark-mode .nav-links a {
+    color: #cbd5e1;
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+    color: #60a5fa;
+}
+
+body.dark-mode .nav-links a.active::after {
+    background-color: #60a5fa;
+}
+
+/* زر الوضع الليلي */
+body.dark-mode .theme-toggle {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #facc15;
+}
+
+/* العنوان الرئيسي */
+body.dark-mode .hero {
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(59, 130, 246, 0.15),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(59, 130, 246, 0.10),
+            transparent 30%
+        );
+}
+
+body.dark-mode .hero-label {
+    background-color: #172554;
+    color: #60a5fa;
+}
+
+body.dark-mode .hero p {
+    color: #cbd5e1;
+}
+
+/* الأقسام البيضاء */
+body.dark-mode .achievements,
+body.dark-mode .timeline-section,
+body.dark-mode .goals-section {
+    background-color: #0f172a;
+}
+
+/* الأقسام الرمادية */
+body.dark-mode .projects-section,
+body.dark-mode .sources-section,
+body.dark-mode .guide-section {
+    background-color: #111827;
+}
+
+/* الكروت */
+body.dark-mode .achievement-card,
+body.dark-mode .project-card,
+body.dark-mode .source-card,
+body.dark-mode .goal-card,
+body.dark-mode .guide-step,
+body.dark-mode .timeline-content {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+body.dark-mode .achievement-card h3,
+body.dark-mode .project-card h3,
+body.dark-mode .source-info h3,
+body.dark-mode .goal-card h3,
+body.dark-mode .guide-step h3,
+body.dark-mode .timeline-content h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .achievement-card p,
+body.dark-mode .project-card p,
+body.dark-mode .source-info p,
+body.dark-mode .goal-card p,
+body.dark-mode .guide-step p,
+body.dark-mode .timeline-content p {
+    color: #cbd5e1;
+}
+
+/* الأيقونات */
+body.dark-mode .project-icon,
+body.dark-mode .source-icon,
+body.dark-mode .guide-icon {
+    background-color: #172554;
+    color: #60a5fa;
+}
+
+/* الخط الزمني */
+body.dark-mode .timeline::before {
+    background-color: #334155;
+}
+
+/* زر العودة للأعلى */
+body.dark-mode .back-to-top {
+    background-color: #2563eb;
+}
+
+/* تحسين الانتقال بين الوضعين */
+body,
+.navbar,
+.achievement-card,
+.project-card,
+.source-card,
+.goal-card,
+.guide-step,
+.timeline-content {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+/* =====================================================
+   تحسينات إضافية للموبايل
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    /* شريط التنقل */
+    .navbar {
+        padding: 12px 4%;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .theme-toggle {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 8px 12px;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 4px 0;
+    }
+
+    /* الواجهة الرئيسية */
+    .hero {
+        min-height: auto;
+        padding: 60px 5% 70px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        line-height: 1.35;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .hero-button {
+        font-size: 15px;
+    }
+
+    /* عناوين الأقسام */
+    .section-heading h2 {
+        font-size: 29px;
+        line-height: 1.4;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    /* الكروت */
+    .achievement-card,
+    .project-card,
+    .source-card,
+    .goal-card,
+    .guide-step {
+        border-radius: 18px;
+    }
+
+    /* المصادر */
+    .source-card {
+        flex-direction: column;
+    }
+
+    .source-icon {
+        min-width: 48px;
+    }
+
+    /* الخط الزمني */
+    .timeline-content {
+        border-radius: 17px;
+    }
+
+    /* عن المشروع */
+    .about-content h2 {
+        font-size: 32px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+}
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 42px;
+
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 20px;
+
+    background-color: #e8f1ff;
+
+    box-shadow:
+        0 10px 30px rgba(22, 119, 255, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.digital-card:hover .card-icon {
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 15px 35px rgba(22, 119, 255, 0.18);
+}
+
+body.dark-mode .card-icon {
+    background-color: #172554;
+}
+/* إصلاح نص بطاقة التعليم الرقمي في Dark Mode */
+
+body.dark-mode .digital-card {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border-color: #334155;
+}
+
+body.dark-mode .digital-card h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .digital-card p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .digital-card .card-icon {
+    background-color: #172554;
+}
+/* =========================================
+   اللمسات النهائية للشكل
+   ========================================= */
+
+/* تحسين شكل التحديد عند الضغط */
+::selection {
+    background-color: #1677ff;
+    color: white;
+}
+
+
+/* تحسين شكل شريط التمرير */
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #94a3b8;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1677ff;
+}
+
+
+/* تحسين العناوين */
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+}
+
+
+/* تحسين المسافات بين الأقسام */
+main section {
+    position: relative;
+}
+
+
+/* خط فاصل بسيط أسفل بعض الأقسام */
+.achievements,
+.timeline-section,
+.goals-section {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* تحسين الكروت */
+.achievement-card,
+.project-card,
+.source-card,
+.goal-card,
+.guide-step {
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* خط أزرق يظهر أعلى الكارت عند المرور عليه */
+.achievement-card::before,
+.project-card::before,
+.source-card::before,
+.goal-card::before,
+.guide-step::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #1677ff;
+    transition: width 0.35s ease;
+}
+
+.achievement-card:hover::before,
+.project-card:hover::before,
+.source-card:hover::before,
+.goal-card:hover::before,
+.guide-step:hover::before {
+    width: 100%;
+}
+
+
+/* تحسين أرقام الكروت */
+.card-number,
+.project-number,
+.goal-number,
+.guide-icon,
+.source-icon {
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover .card-number,
+.project-card:hover .project-number,
+.goal-card:hover .goal-number,
+.guide-step:hover .guide-icon,
+.source-card:hover .source-icon {
+    transform: scale(1.08);
+}
+
+
+/* تحسين أزرار المصادر */
+.source-button {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.source-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(22, 119, 255, 0.18);
+}
+
+
+/* تحسين بطاقة المطور */
+.developer-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.developer-card::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.06);
+    top: -100px;
+    left: -80px;
+    pointer-events: none;
+}
+
+
+/* تحسين زر العودة للأعلى */
+.back-to-top {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* تحسين التركيز للكيبورد */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid rgba(22, 119, 255, 0.35);
+    outline-offset: 4px;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   تحسين الوضع الليلي
+   ========================================= */
+
+body.dark-mode ::-webkit-scrollbar-track {
+    background-color: #0f172a;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background-color: #475569;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background-color: #60a5fa;
+}
+
+body.dark-mode .achievements,
+body.dark-mode .timeline-section,
+body.dark-mode .goals-section {
+    border-bottom-color: #1e293b;
+}
+
+
+/* =========================================
+   تحسين الموبايل
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .achievement-card:hover,
+    .project-card:hover,
+    .source-card:hover,
+    .goal-card:hover,
+    .guide-step:hover {
+        transform: translateY(-4px);
+    }
+
+    .source-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .developer-card {
+        margin-top: 20px;
+    }
+
+}
+/* =========================================
+   إصلاح مشروعات الدولة على شاشات الموبايل
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+/* =========================================
+   تحسين تخطيط الموقع على الموبايل
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    /* كل شبكات الكروت تصبح عمودًا واحدًا */
+    .cards-grid,
+    .projects-grid,
+    .sources-grid,
+    .goals-grid,
+    .guide-grid {
+        grid-template-columns: 1fr !important;
+        width: 100%;
+    }
+
+    /* الكروت تأخذ عرض المساحة المتاحة */
+    .achievement-card,
+    .project-card,
+    .source-card,
+    .goal-card,
+    .guide-step {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* منع أي عنصر من توسيع الصفحة أفقيًا */
+    .cards-grid,
+    .projects-grid,
+    .sources-grid,
+    .goals-grid,
+    .guide-grid {
+        overflow: visible;
+    }
+
+    /* تحسين قراءة النص داخل الكروت */
+    .achievement-card p,
+    .project-card p,
+    .source-card p,
+    .goal-card p,
+    .guide-step p {
+        line-height: 1.9;
+    }
+
+}
